@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedbackLink = popupFeedback.querySelector('.botao-feedback');
 
     // Substitua esta URL pela URL do seu servidor Render APÓS a implantação
-    const SERVER_URL = 'http://localhost:5000/ask'; // Para testar localmente
+    //const SERVER_URL = 'http://localhost:5000/ask'; // Para testar localmente
+    const SERVER_URL = 'https://chatbot-m365-ads.onrender.com/ask';
 
     // Lógica do Chatbot
     // Adiciona evento para abrir o chat quando o ícone é clicado
