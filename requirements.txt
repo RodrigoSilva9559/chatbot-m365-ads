@@ -1,0 +1,3 @@
+Flask
+flask-cors
+gunicorn  # Necessário para rodar o servidor Flask em produção
