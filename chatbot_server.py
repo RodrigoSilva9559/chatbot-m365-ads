@@ -10,7 +10,8 @@ CORS(app)
 
 # URL base que será usada para as imagens. 
 # ATUALIZE ESTA URL quando você hospedar suas imagens no GitHub Pages!
-BASE_IMAGE_URL = "https://via.placeholder.com/300x150?text=" 
+# BASE_IMAGE_URL = "https://via.placeholder.com/300x150?text="
+BASE_IMAGE_URL = "https://rodrigosilva9559.github.io/chatbot-m365-ads/imagens/"
 
 # --- Base de Conhecimento Expandida ---
 FAQ_M365 = {
@@ -24,7 +25,8 @@ FAQ_M365 = {
                     
                     🔐 *Obs: Senha padrão só funciona se nunca foi alterada. Em caso de problemas ou esquecimento, procure o **Rodrigo na Secretaria**.*
                     """,
-        "image_url": f"{BASE_IMAGE_URL}Tela+de+Login" 
+        # "image_url": f"{BASE_IMAGE_URL}Tela+de+Login"
+        "image_url": f"{BASE_IMAGE_URL}login/tela_login.jpg"
     },
     "login_visitante": {
         "keywords": ["visitante", "convidado", "acesso especial", "wifi"],
