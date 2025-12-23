@@ -23,11 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         iconeChat.style.display = 'none'; // Esconde o ícone
     });
 
-    // Minimizar chat
-    botaoMinimizar.addEventListener('click', () => {
-        popupChat.classList.remove('aberto');
-        iconeChat.style.display = 'flex'; // Exibe o ícone novamente
+    // Minimizar chat 
+    if (botaoMinimizar) { 
+        botaoMinimizar.addEventListener('click', () => { 
+            popupChat.classList.remove('aberto'); 
+            iconeChat.style.display = 'flex'; // Exibe o ícone novamente 
     });
+
+}
 
     // Função para adicionar mensagens ao chat
     function adicionarMensagem(data, remetente) {
