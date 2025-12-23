@@ -1,64 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <link rel="icon" type="image/png" href="imagens/notas.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guia Microsoft 365</title>
+  <title>Como posso lhe ajudar hoje?</title>
+  <meta name="description" content="Guia prático para alunos e professores utilizarem o Microsoft 365 com eficiência. Descubra dicas, truques e soluções rápidas para Word, Excel, PowerPoint e muito mais.">
 
+  <!-- Fonte moderna -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Como posso lhe ajudar hoje?</h1>
+  <header>
+    <h1>Como posso lhe ajudar hoje?</h1>
+  </header>
 
-  <div id="conteudo">
-    <h5>
-      Olá!<br><br>
-      Caros alunos e professores,<br><br>
-      Criei este guia com o intuito de auxiliá-los a se logarem e utilizarem todos os recursos oferecidos pelo Microsoft 365 de maneira eficiente e produtiva.<br><br>
-      Este serviço disponibiliza uma ampla gama de ferramentas, incluindo Word, Excel, PowerPoint, OneNote e Teams, que são essenciais para o ambiente de aprendizado e trabalho.<br><br>
-      Através deste guia, vocês encontrarão instruções passo a passo para acessar suas contas, dicas de como otimizar o uso de cada aplicativo e soluções para problemas comuns que podem surgir durante o uso.<br><br>
-      Nosso objetivo é garantir que todos possam aproveitar ao máximo as funcionalidades do Microsoft 365, facilitando suas atividades diárias e aprimorando sua experiência digital.
-    </h5>
-  </div>
+  <main id="conteudo">
+    <section>
+      <h2>👋 Olá, alunos e professores!</h2>
+      <p>
+        Você já imaginou dominar todas as ferramentas do <strong>Microsoft 365</strong> com facilidade?  
+        Este guia revela truques, atalhos e segredos que vão transformar sua forma de estudar e trabalhar.
+      </p>
+      <p>
+        📌 Descubra como acessar sua conta sem complicações, explore dicas para turbinar o uso do Word, Excel e PowerPoint, e encontre soluções rápidas para os problemas do dia a dia.
+      </p>
+      <p>
+        O melhor de tudo: você pode perguntar ao chat ao lado e receber instruções passo a passo, sempre que precisar.
+      </p>
+      <p>
+        🚀 Nosso objetivo é que você aproveite cada recurso do Microsoft 365 e leve sua experiência digital para outro nível.  
+        Está pronto para começar?
+      </p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Criado por Rodrigo Silva</p>
   </footer>
 
-  <div class="assistente-virtual">
+  <!-- Assistente Virtual -->
+  <div class="assistente-virtual" role="complementary" aria-label="Assistente Virtual">
     <div class="icone-assistente">
-      <img src="https://via.placeholder.com/40?text=AI" alt="Assistente Virtual">
+      <img src="imagens/Chatbot.png" alt="Ícone do Assistente Virtual">
     </div>
-    <div class="popup-assistente">
+    <div class="popup-assistente" aria-live="polite">
       <div class="header-chat">
         <span class="titulo-chat">Assistente Virtual</span>
-        <button id="minimizar-chat" class="botao-minimizar">-</button>
+        <button id="minimizar-chat" class="botao-minimizar" aria-label="Minimizar chat">-</button>
       </div>
       <div class="conversa-container" id="conversa-container">
         <div class="mensagem bot-mensagem">
-          Olá! Sou o assistente virtual da Empresa Camaquã. Em que posso ajudar?
+          👋 Olá! Sou seu assistente virtual. Pergunte-me algo que queira saber?
         </div>
       </div>
       <div class="input-container">
+        <label for="input-usuario" class="sr-only">Digite sua pergunta</label>
         <input type="text" id="input-usuario" placeholder="Digite sua pergunta...">
         <button id="enviar-pergunta">Enviar</button>
       </div>
     </div>
   </div>
 
-  <div id="feedback-popup" class="feedback-popup-overlay">
+  <!-- Feedback Popup -->
+  <div id="feedback-popup" class="feedback-popup-overlay" role="dialog" aria-labelledby="feedback-title" aria-modal="true">
     <div class="feedback-popup-content">
-      <button class="fechar-popup" id="fechar-popup-feedback">×</button>
-      <h2>Avalie e Ajude a Melhorar!</h2>
+      <button class="fechar-popup" id="fechar-popup-feedback" aria-label="Fechar feedback">×</button>
+      <h2 id="feedback-title">Avalie e Ajude a Melhorar!</h2>
       <p>O que você achou da nossa ferramenta? Gostaríamos muito de ouvir suas sugestões para melhorarmos ainda mais.</p>
-      <a href="[URL_DO_SEU_FORMULARIO_AQUI]" target="_blank" class="botao-feedback">Dar Feedback</a>
+      <a href="https://forms.office.com/r/mpeD1i1LxM?origin=lprLink" target="_blank" class="botao-feedback">Dar Feedback</a>
       <small>Obrigado pelo seu tempo!</small>
     </div>
   </div>
 
+  <!-- Biblioteca para converter Markdown em HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Seu script principal -->
   <script src="script.js"></script>
 </body>
 </html>

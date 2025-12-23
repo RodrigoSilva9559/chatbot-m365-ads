@@ -12,18 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const fecharPopupFeedback = document.getElementById('fechar-popup-feedback');
     const feedbackLink = popupFeedback.querySelector('.botao-feedback');
 
-    // Substitua esta URL pela URL do seu servidor Render APÓS a implantação
+    // Substitua esta URL pela URL do seu servidor Render após a implantação
     //const SERVER_URL = 'http://localhost:5000/ask'; // Para testar localmente
     const SERVER_URL = 'https://chatbot-m365-ads.onrender.com/ask';
 
     // Lógica do Chatbot
-    // Adiciona evento para abrir o chat quando o ícone é clicado
+    // Abrir chat ao clicar no ícone
     iconeChat.addEventListener('click', () => {
         popupChat.classList.add('aberto');
         iconeChat.style.display = 'none'; // Esconde o ícone
     });
 
-    // Adiciona evento para minimizar o chat
+    // Minimizar chat
     botaoMinimizar.addEventListener('click', () => {
         popupChat.classList.remove('aberto');
         iconeChat.style.display = 'flex'; // Exibe o ícone novamente
@@ -39,10 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
             divMensagem.classList.add('bot-mensagem');
         }
 
-        divMensagem.textContent = data.text;
+        // Renderiza Markdown como HTML
+        if (typeof marked !== 'undefined') {
+            divMensagem.innerHTML = marked.parse(data.text);
+        } else {
+            divMensagem.textContent = data.text;
+        }
+
         conversaContainer.appendChild(divMensagem);
 
-        if (data.image_url) {
+        // Se houver várias imagens
+        if (data.image_urls && Array.isArray(data.image_urls)) {
+            data.image_urls.forEach(url => {
+                const imgElement = document.createElement('img');
+                imgElement.src = url;
+                imgElement.classList.add('mensagem-imagem');
+                conversaContainer.appendChild(imgElement);
+            });
+        } else if (data.image_url) {
+            // Suporte para uma única imagem
             const imgElement = document.createElement('img');
             imgElement.src = data.image_url;
             imgElement.classList.add('mensagem-imagem');
@@ -52,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         conversaContainer.scrollTop = conversaContainer.scrollHeight;
     }
 
-    // Função para enviar a pergunta para o backend
+    // Função para enviar pergunta ao backend
     async function enviarPergunta() {
         const pergunta = inputUsuario.value.trim();
         if (pergunta === '') {
@@ -76,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const data = await response.json();
-            
+
             setTimeout(() => {
                 adicionarMensagem(data, 'bot');
             }, 500);
@@ -95,19 +110,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Lógica do Pop-up de Feedback
-    // A cada 30 segundos (30000 ms), o pop-up aparece
+    // Exibe após 30 segundos
     setTimeout(() => {
-      popupFeedback.style.display = 'flex';
+        popupFeedback.style.display = 'flex';
     }, 30000);
 
-    // Adiciona evento para fechar o pop-up de feedback
+    // Fechar pop-up de feedback
     fecharPopupFeedback.addEventListener('click', () => {
-      popupFeedback.style.display = 'none';
+        popupFeedback.style.display = 'none';
     });
 
-    // IMPORTANTE:
-    // Você precisa criar seu próprio formulário online (Google Forms, Typeform, etc.)
-    // e colocar o link dele aqui!
-    // Exemplo: https://docs.google.com/forms/d/e/1FAIpQLSc-W...
-    feedbackLink.href = "[URL_DO_SEU_FORMULARIO_AQUI]";
+    // Link do formulário de feedback
+    feedbackLink.href = "https://forms.office.com/r/mpeD1i1LxM?origin=lprLink";
 });
