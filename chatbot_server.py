@@ -16,7 +16,7 @@ BASE_IMAGE_URL = "https://rodrigosilva9559.github.io/chatbot-m365-ads/imagens/"
 # --- Base de Conhecimento Expandida ---
 FAQ_M365 = {
     "login_computador": {
-        "keywords": ["acesso", "login", "entrar", "entrar no computador", "entrar no pc", "acessar computador", "acessar pc", "computador", "primeiro acesso"],
+       "keywords": ["acesar","acesar computador","acesar compudador","acesso computador","acesso compudador", "login","loguin","logim","logn","loggin","loguin","loguin","loguin","loguin","loguin", "entrar","entar","entra","entrarr","entrarr","entrra","entarr","entar","entar","entar", "entrar no computador","entar no computador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador", "entrar no pc","entar no pc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc", "acessar computador","acesar computador","acessar compudador","acessar compudador","acessar compudador","acessar compudador","acessar compudador","acessar compudador","acessar compudador","acessar compudador", "acessar pc","acesar pc","acessar pcc","acessar pcc","acessar pcc","acessar pcc","acessar pcc","acessar pcc","acessar pcc","acessar pcc", "computador","compudador","computadorr","computado","computador","computador","computador","computador","computador","computador", "primeiro acesso","primeiro aceso","primeiro acsso","primeiro acseso","primeiro acsso","primeiro acsso","primeiro acsso","primeiro acsso","primeiro acsso","primeiro acsso", "iniciar","inicar","inicir","inicar","inicir","inicar","inicir","inicar","inicir","inicar", "começar","comecar","comessar","comecar","comessar","comecar","comessar","comecar","comessar","comecar", "abrir" ],
         "text": f"""
 📚 **Alunos e Professores Senac Camaquã**<br><br>
 👤 Clique em **"Novo Usuário"** na tela inicial.<br><br>
@@ -31,7 +31,7 @@ FAQ_M365 = {
         "image_url": f"{BASE_IMAGE_URL}login/tela_login.jpg"
     },
     "login_visitante": {
-        "keywords": ["visitante", "convidado", "acesso especial", "login visitante", "login convidado", "acesso visitante","acesso convidado", "login convidado", "entrar visitante", "entrar convidado", "acessar pc visitante", "acessar pc convidado"],
+        "keywords": [ "visitante","visitanete","visistante","vizitante","vistante","visistnte","visittante","vissitante","visitant","visitnte", "convidado","convidaddo","convidad","convidaro","convidato","convidaod","conviddao","conviddado","convidadp","convidad0", "acesso especial","aceso especial","acesso espceial","acesso especia","aceso espcl","acso especial","acesso espcl","acesso espcia","acesso espceal","acesso espcll", "login visitante","logim visitante","loguin visitante","login visitant","login vizitante","login visistante","login vistante","login visitnte","login visitanete","login visistnte", "login convidado","logim convidado","loguin convidado","login convidaod","login convidato","login convida","login convdado","login convidaado","login convvidado","login convidaod", "acesso visitante","aceso visitante","acesso vizitante","acesso visitant","aceso visistante","acesso vistante","acesso visitnte","acesso visistnte","acesso visitanete","acesso visistnte", "acesso convidado","aceso convidado","acesso convidaod","acesso convidato","aceso convida","acesso convdado","acesso convidaado","acesso convvidado","acesso convidaod","acesso conviddao", "entrar visitante","entar visitante","entrar vizitante","entrar visitant","entrar visistante","entrar vistante","entrar visitnte","entrar visistnte","entrar visitanete","entrar visistnte", "entrar convidado","entar convidado","entrar convidaod","entrar convidato","entrar convida","entrar convdado","entrar convidaado","entrar convvidado","entrar convidaod","entrar conviddao" ],
         "text": f"""
 🧑‍💼 **Acesso Visitantes**<br><br>
 🔑 **Login:** camaqua01@senacrs.edu.br<br>
@@ -41,7 +41,7 @@ FAQ_M365 = {
         "image_url": f"{BASE_IMAGE_URL}login/tela_login.jpg"
     },
         "login_wifi": {
-        "keywords": ["wifi", "senha wifi", "internet", "wifi internet"],
+        "keywords": [ "wifi","wfi","wi-fi","wi fi","wiffi","wifii","wify","wif","wifii","wifii", "senha wifi","senhaa wifi","senah wifi","senhaa wfi","senhaa wi-fi","senhaa wiffi","senhaa wify","senhaa wif","senhaa wifii","senhaa wifii", "internet","internt","internete","interne","intenet","inernet","internett","internete","internat","internat", "wifi internet","wfi internet","wi-fi internet","wi fi internet","wiffi internet","wifii internet","wify internet","wif internet","wifii internete","wifii internat", "rede wifi","rede wfi","rede wi-fi","rede wiffi","rede wify","rede wifii","rede wif","rede wifii","rede wifii","rede wify" ],
         "text": f"""                  
 📶 **Rede Wi‑Fi Visitantes:** Senac Visitantes  
 🔑 **Senha Wi‑Fi:** trijuntos<br><br>
@@ -71,7 +71,7 @@ FAQ_M365 = {
     ]
  },
     "ativar_office": {
-        "keywords": ["ativar office", "ativa office", "ativar ofice", "ativa ofice", "ativar word", "ativa word", "ativar excel", "ativa excel", "licença office"],
+       "keywords": [ "ativar office","ativa office","ativar ofice","ativa ofice","ativar offfice","ativar offce","ativar offcie","ativar offise","ativar offece","ativar offise", "ativa ofice","ativa offce","ativa offcie","ativa offise","ativa offece","ativa offise","ativa offcie","ativa offce","ativa offise","ativa offece", "ativar ofc","ativa ofc","ativar off","ativa off","ativar offi","ativa offi","ativar offiice","ativa offiice","ativar offecee","ativa offecee", "ativar word","ativa word","ativar wrod","ativar wrd","ativar wor","ativar wod","ativar wordd","ativar worrd","ativar worde","ativar worl", "ativa word","ativa wrod","ativa wrd","ativa wor","ativa wod","ativa wordd","ativa worrd","ativa worde","ativa worl","ativa worde", "ativar wrld","ativa wrld","ativar wrldd","ativa wrldd","ativar worrld","ativa worrld","ativar wordee","ativa wordee","ativar worddd","ativa worddd", "ativar excel","ativa excel","ativar exel","ativar exl","ativar exccl","ativar excell","ativar excal","ativar exelc","ativar exel","ativar excsel", "ativa excel","ativa exel","ativa exl","ativa exccl","ativa excell","ativa excal","ativa exelc","ativa exel","ativa excsel","ativa excal", "ativar exell","ativa exell","ativar exelc","ativa exelc","ativar excele","ativa excele","ativar excele","ativa excele","ativar excele","ativa excele", "licença office","licenca office","licença ofice","licenca ofice","licença offce","licença offcie","licença offise","licença offece","licença offise","licença offcie", "licenca ofc","licença ofc","licenca off","licença off","licenca offi","licença offi","licenca offiice","licença offiice","licenca offecee","licença offecee", "word","wrod","worrd","wordd","worde","worl","wrld","wrd","woed","wrd", "excel","exel","exl","exell","excell","excal","exccl","exelc","excsel","excele", "power point","powerpoint","pwr point","pwrpoint","pwer point","pwerpoint","poer point","poerpoint","powr point","powrpoint", "powerpint","powerpintt","powerpint","powerpintt","powerpoit","powerpoitt","powerpoit","powerpoitt","powerpoin","powerpoin", "ativar powerpoint","ativa powerpoint","ativar pwr point","ativa pwr point","ativar poer point","ativa poer point","ativar powr point","ativa powr point","ativar powerpint","ativa powerpint", "ativar powerpoit","ativa powerpoit","ativar powerpoin","ativa powerpoin","ativar powerpoitt","ativa powerpoitt","ativar powerpoinn","ativa powerpoinn","ativar powerpoinnt","ativa powerpoinnt" ],
         "text": f"""
 ✅ **Ativar o Pacote Office**<br><br>
 1️⃣ **Abrir o Office**<br>
@@ -97,7 +97,7 @@ FAQ_M365 = {
     ]
     },
     "portal_aluno_acesso": {
-        "keywords": ["portal do aluno", "acessar portal", "portal", "login portal"],
+        "keywords": [ "portal do aluno","portal do alno","portal do alun","portal do alumo","portal do alino","portal do alumo","portal do aln","portal do alnoo","portal do alnu","portal do alino", "acessar portal","acesar portal","acessar portl","acessar portaal","acessar portel","acessar portao","acessar portla","acessar portaal","acessar portaal","acessar portaal", "portal","portl","portaal","portel","portao","prtal","poratl","portla","portaal","portaal", "login portal","logim portal","loguin portal","logn portal","login portl","login portaal","login portel","login portao","login portla","login poratl" ],
         "text": f"""
 💻 **Acessar o Portal do Aluno**<br><br>
 1️⃣ **Entrar no site** <br>
@@ -119,7 +119,7 @@ FAQ_M365 = {
         ]
     },
     "solicitar_servico": {
-        "keywords": ["solicitar serviço", "justificativa", "atestado escolar", "protocolo"],
+        "keywords": [ "solicitar serviço","solicitar servico","solicitar serviso","solicitar servisso","solicitar servicoo", "solicitar servico","solicitar servico","solicitar servico","solicitar servico","solicitar servico", "solicitar servico","solicitar servico","solicitar servico","solicitar servico","solicitar servico", "solicitar servico","solicitar servico","solicitar servico","solicitar servico","solicitar servico", "solicitar certificado","solicitar certficado","solicitar certifcado","solicitar certifcado","solicitar certifcadoo", "solicitar certifcado","solicitar certifcado","solicitar certifcado","solicitar certifcado","solicitar certifcado", "solicitar certifcado","solicitar certifcado","solicitar certifcado","solicitar certifcado","solicitar certifcado", "solicitar certifcado","solicitar certifcado","solicitar certifcado","solicitar certifcado","solicitar certifcado", "atestado escolar","atetsado escolar","atestdo escolar","atestado esolar","atestado escoolar", "atestado escolar","atestado escolar","atestado escolar","atestado escolar","atestado escolar", "atestado escolar","atestado escolar","atestado escolar","atestado escolar","atestado escolar", "atestado escolar","atestado escolar","atestado escolar","atestado escolar","atestado escolar", "protocolo","protcolo","protoclo","protocoolo","protocoll", "protocolo","protocolo","protocolo","protocolo","protocolo", "protocolo","protocolo","protocolo","protocolo","protocolo", "protocolo","protocolo","protocolo","protocolo","protocolo" ],
         "text": f"""
 📄 **Solicitar Serviço/Protocolo (Portal do Aluno)**<br><br>
 1️⃣ **Entrar no Portal do Aluno**<br>
@@ -154,7 +154,7 @@ FAQ_M365 = {
         ]
     },
     "justificativa_falta": {
-        "keywords": ["justificar falta", "atestado medico", "atraso justificativa"],
+        "keywords": [ "justificar falta","justifcar falta","justficar falta","justifcar falt","justificar falata", "justificar falat","justificar falat","justifcar falat","justficar falata","justifcar falata", "justificar fta","justificar fatla","justificar flata","justifcar flta","justficar flata", "justificar falt","justifcar falt","justficar falt","justifcar falt","justficar falt", "atestado medico","atetsado medico","atestdo medico","atestado medco","atestado mediko", "atestado mediko","atestado mediko","atestado mediko","atestado mediko","atestado mediko", "atestado medik","atestado medik","atestado medik","atestado medik","atestado medik", "atestado med","atestado med","atestado med","atestado med","atestado med", "atraso justificativa","atraso justifcativa","atraso justifictiva","atraso justificava","atraso justificatiiva", "atraso justificativaa","atraso justifcava","atraso justifictva","atraso justificatva","atraso justificatvia", "atraso justifcativ","atraso justificativ","atraso justificativ","atraso justificativ","atraso justificativ", "atraso justificativ","atraso justificativ","atraso justificativ","atraso justificativ","atraso justificativ" ],
         "text": f"""
 📅 **Justificativa de Faltas**<br><br>
 📄 **Documentos**<br>
@@ -167,7 +167,7 @@ FAQ_M365 = {
         "image_url": "" 
     },
     "trocar_senha_computador": {
-        "keywords": ["trocar senha", "trocar", "senha", "alterar senha pc", "senha forte"],
+        "keywords": [ "trocar senha","trocar senhaa","trocar senah","trocar senh","trocar sennha","trocar sennhaa","trocar senhaa","trocar senahh","trocar sennh","trocar senahh", "trocar","troacr","trcar","trocarr","troka","tocar","troccar","trocarrr","trocarr","trocarrr", "senha","senhaa","senah","senh","sennha","sennhaa","senhaa","senahh","sennh","senahh", "alterar senha pc","alterar senhaa pc","alterar senah pc","alterar senh pc","alterar sennha pc","alterar sennhaa pc","alterar senhaa pc","alterar senahh pc","alterar sennh pc","alterar senahh pc", "senha forte","senhaa forte","senah forte","senh forte","sennha forte","sennhaa forte","senhaa forte","senahh forte","sennh forte","senahh forte" ],
         "text": f"""
 🔑 **Troca de Senha do Computador/Rede**<br><br>
 1️⃣ **Abrir Menu de Segurança**<br>
@@ -192,7 +192,7 @@ FAQ_M365 = {
         ]
     },
     "biblioteca_online": {
-        "keywords": ["biblioteca online", "livros digitais", "pergamum"],
+        "keywords": [ "biblioteca online","bibliotca online","biblioteka online","bibliotca onlin","biblioteca onlin","biblioteca onlne","biblioteca olnine","biblioteca onlina","biblioteca onliine","biblioteca onlline", "biblioteca onlain","biblioteca onliene","biblioteca onlina","biblioteca onlien","biblioteca onlini", "livros digitais","livros digitas","livros digitai","livros digitall","livros digitails","livros digitasi","livros digtais","livros digtals","livros digtias","livros digtasi", "livros digitau","livros digitaz","livros digitais","livros digitass","livros digitaiis", "pergamum","pergamu","pergamun","pergammum","pergamumm","pergamunm","pergamummm","pergamummu","pergamummn","pergamummo", "pergamummi","pergamummu","pergamummo","pergamummn","pergamummm" ],
         "text": f"""
 📚 **Acesso à Biblioteca Online (Minha Biblioteca)** <br><br>
 1️⃣ **Entrar no site**<br>
@@ -214,7 +214,7 @@ FAQ_M365 = {
         ]
     },
     "emprestimo_livros": {
-        "keywords": ["emprestimo livro", "renovacao", "multa biblioteca"],
+        "keywords": [ "emprestimo livro","emprestimo livr","emprestimo livor","emprestimo livru","emprestimo livvo", "emprestimo livvro","emprestimo livrro","empréstimo livro", "emprestimo livvro","emprestimo livvroo","emprestimo livvro", "emprstimo livro","emprstimo livr","emprstimo livor","emprstimo livru","emprstimo livvo", "emprestmo livro","emprestmo livr","emprestmo livor","emprestmo livru","emprestmo livvo", "renovacao","renovacão","renovaco","renovacau","renovacoo", "renovacãoo","renovacãoo","renovacãoo","renovacãoo","renovacãoo", "renovcao","renovcão","renovcau","renovcaoo","renovcãoo", "renovacã","renovacãa","renovacãao","renovacãu","renovacãoo", "multa biblioteca","multa bibliotca","multa biblioteka","multa bibliotce","multa bibliotecaa", "multa bibliotec","multa bibliotec","multa bibliotec","multa bibliotec","multa bibliotec", "multa bibliteca","multa biblitec","multa biblitekaa","multa biblitecaa","multa biblitec", "multa bibliteka","multa biblitekaa","multa biblitecaa","multa biblitec","multa biblitec" ],
         "text": f"""
 📖 **Empréstimo de Livros – Biblioteca Física** <br><br>
 📚 **Empréstimo** <br>
@@ -229,7 +229,7 @@ FAQ_M365 = {
         "image_url": ""
     },
     "cursos": {
-        "keywords": ["cursos", "cursos livres", "cursos tecnicos", "ead", "graduação"],
+        "keywords": [ "cursos","cursoss","cursso","curssos","cursu","curssu","curss","crusos","curssos","cursoss", "cursos livres","cursoss livres","cursso livres","curssos livres","cursu livres","curssu livres","curss livres","crusos livres","curssos livress","cursoss livress", "cursos tecnicos","cursoss tecnicos","cursso tecnicos","curssos tecnicos","cursu tecnicos","curssu tecnicos","curss tecnicos","crusos tecnicos","curssos tecnicos","cursoss tecnicos", "ead","eaad","eadd","eadd","eaad","eaddd","ead ","eads","eads","eadd", "graduação","graduacao","graduaçao","graduaçã","graduaçãao","graduaçãa","graduaçãu","graduaçãoo","graduaçã","graduaçãao" ],
         "text": f"""
 🎓 **Conheça Nossas Áreas de Cursos!** <br><br>
 📘 **FIC e Livres** <br>
@@ -238,15 +238,12 @@ FAQ_M365 = {
 ➡️ [Portfólio de Cursos Técnicos Presenciais](https://www.senacrs.com.br/cursosTecnicos)<br><br>
 💻 **EAD (FIC, Técnico, Pós)** <br>
 ➡️ [Portfólio de cursos FIC, Técnico e Pós EAD](https://www.ead.senac.br/niveis-de-ensino/)<br><br>
-➡️**Cursos gratuitos (PSG)**<br>
-➡️ [Vagas PSG](https://www.senacrs.com.br/hotsite/psg/partials/vagas-filter.php)<br><br>
-⚠️ **Dica Importante** <br>
-📍 Para visualizar vagas gratuitas, selecione Camaquã na página.
+
                     """,
-        "image_url": f"{BASE_IMAGE_URL}imagens/Curso PSG.png"
+        "image_url": ""        
     },
     "contatos_cursos": {
-        "keywords": ["whatsapp", "consultoras", "contato cursos"],
+        "keywords": [ "whatsapp","watsapp","whatsap","whatspp","whatsappp","watssap","watsap","whatsap","whatsapppp","whatsappp", "consultoras","consultora","consultoras","consutoras","consultroras","consutlora","consultrra","consultroras","consultroras","consultroras", "vendas","venda","vndas","vndass","vendass","vendaz","vendazs","vendazss","vendazs","vendazss", "whats","wats","whatsz","whatz","whatsx","whatsc","whatsk","whatsq","whatsw","whatsv", "contato cursos","contato cursoss","contato cursso","contato curssos","contato cursu","contato curssu","contato curss","contato crusos","contato curssos","contato cursoss" ],
         "text": f"""
 📞 **Contatos das Consultoras de Cursos**<br><br>
 
@@ -263,7 +260,7 @@ FAQ_M365 = {
         "image_url": ""
     },
     "contato_secretaria": {
-        "keywords": ["falar com secretaria", "contato secretaria"],
+        "keywords": [ "falar com secretaria","falar com secretari","falar com secretaira","falar com secretária","falar com secrtaria", "falar com secetaria","falar com secretariia","falar com secretarria","falar com secretarai","falar com secretari", "falr com secretaria","falaar com secretaria","falar cm secretaria","falar com secetaria","falar com secretariia", "falar com secretari","falar com secretarai","falar com secretarria","falar com secretari","falar com secretari", "falar secretaria","falr secretaria","falaar secretaria","falar secetaria","falar secretari", "falar secretaira","falar secretária","falar secrtaria","falar secretariia","falar secretarria", "contato secretaria","contato secretari","contato secretaira","contato secretária","contato secrtaria", "contato secetaria","contato secretariia","contato secretarria","contato secretarai","contato secretari", "contato secretria","contato secretraria","contato secretari","contato secretari","contato secretari", "contato secetaria","contato secretariia","contato secretarria","contato secretarai","contato secretari", "cntato secretaria","contato secetaria","contato secretariia","contato secretarria","contato secretari" ],
         "text": f"""
 💬 **Contato da Secretaria (WhatsApp)**<br>
 
@@ -273,7 +270,7 @@ FAQ_M365 = {
         "image_url": ""
     },
     "documentos_entrega": {
-        "keywords": ["certificado", "diploma", "atestado de matricula", "prazo"],
+       "keywords": [ "certificado","certifcado","certifcadoo","certifcado","certifcado","certifcado","certifcado","certifcado","certifcado","certifcado", "certifcado","certifcado","certifcado", "diploma","diplomaa","diplomma","diplomma","diplom","diplom","diplom","diplom","diplom","diplom", "diplom","diplom","diplom", "atestado de matricula","atetsado de matricula","atestdo de matricula","atestado d matricula","atestado de matrcula","atestado de matrciula","atestado de matriula","atestado de matrucula","atestado de matrcul","atestado de matrcul", "atestado de matrcula","atestado de matrcula","atestado de matrcula", "prazo","prazoz","praaz","prazzo","prazoo","praz","praz","praz","praz","praz", "praz","praz","praz" ],
         "text": f"""
 📄 **Certificados, Diplomas e Atestados**<br><br>
 
@@ -293,7 +290,7 @@ FAQ_M365 = {
         "image_url":""
     },
     "pagamentos": {
-        "keywords": ["pagar curso", "boleto", "pix", "cartao", "financeiro", "pagar"],
+        "keywords": [ "pagar curso","pagar curço","pagar curço","pagar cursso","pagar cursu","pagar curssu","pagar curss","pagar crusso","pagar curs","pagar curço", "boleto","boelto","bolto","boelto","boeltoo","boeltoo","boeltoo","boeltoo","boeltoo","boeltoo", "pix","piks","piz","pis","pixx","piix","pixi","pixz","pixs","pixc", "cartao","cartão","carto","cartan","cartaoo","cartao","cartã","cartãao","cartãu","cartãaoo", "financeiro","finaceiro","financero","finanseiro","financieiro","financieiroo","financieiro","financiero","financieiro","financieiro", "pagar","pagarr","pagr","paga","pagaar","pagarr","pagarr","pagarr","pagarr","pagarr","pagamento" ],
         "text": f"""
 💰 **Pagamento de Cursos**<br><br>
 
@@ -311,7 +308,7 @@ FAQ_M365 = {
         "image_url": ""
     },
     "boletim": {
-        "keywords": ["boletim", "notas", "ver nota"],
+        "keywords": [ "boletim","boletin","boletimm","boletime","boletii","boletinm","boletm","boletmi","boletiin","boletiem", "boletimee","boletimm","boletimmm","boletinmm","boletiemm","boletime","boletimee","boletimm","boletiin","boletiem", "notas","nota","notaz","notass","notaas","notazs","notazss","nottas","nottaz","nottass", "nottazs","nottazss","notazzz","notazss","notazs","notasss","notaz","notazs","notazss","notazzz", "ver nota","ver notaa","ver notaz","ver notazs","ver notazss","ver notass","ver notaas","ver notazzz","ver notazs","ver notazss", "ver notazzz","ver notaz","ver notazs","ver notazss","ver notasss","ver notaz","ver notazs","ver notazss","ver notazzz","ver notaz" ],
         "text": f"""
 📊 **Acesso ao Boletim**<br><br>
 
@@ -328,7 +325,7 @@ FAQ_M365 = {
         "image_url": ""
     },
     "cursos_gratuitos": {
-        "keywords": ["psg", "gratuitos", "vagas gratuitas", "inscrever cursos"],
+        "keywords": [ "psg","psgg","psjg","pshg","psq","psqq","psjg","pshg","psggg","psgg","psjg","pshg", "gratuitos","gratuito","gratuitosss","gratuitosz","gratuitosx","gratuitosv","gratuitosw","gratuitosq","gratuitosk","gratuitosd","gratuitosf","gratuitosg", "vagas gratuitas","vagas gratuito","vagas gratutos","vagas gratitua","vagas gratituaas","vagas gratituz","vagas gratituss","vagas gratitux","vagas gratituw","vagas gratituk","vagas gratituf","vagas gratitug", "inscrever cursos","inscreve cursos","inscrevr cursos","inscreveer cursos","inscreve cursos","inscrev cursos","inscrevrr cursos","inscrevve cursos","inscrevver cursos","inscrevvr cursos","inscrevrs cursos","inscrevrss cursos","inscrevrz cursos" ],
         "text": f"""
 🆓 **Cursos Gratuitos (PSG)**<br><br>
 
@@ -348,12 +345,12 @@ FAQ_M365 = {
         "image_url": ""
     },
     "trabalhe_conosco": {
-        "keywords": ["trabalhe conosco", "vagas emprego", "oportunidades trabalho"],
+       "keywords": [ "trabalhe conosco","trabalhe conoso","trabalhe conssco","trabalhe conoscco","trabalhe conosoo","trabalhe conossco","trabalhe conosskoo","trabalhe conosscoo","trabalhe conosskoo","trabalhe conosskoo", "trabalhe conoso","trabalhe conssco","trabalhe conoscco","trabalhe conosoo","trabalhe conossco","trabalhe conosskoo","trabalhe conosscoo","trabalhe conosskoo","trabalhe conosskoo","trabalhe conosskoo", "vagas emprego","vagas emprgo","vagas emrego","vagas empprego","vagas empprego","vagas emppregoo","vagas emppregu","vagas emppreguu","vagas emppregoo","vagas emppregoo", "vagas emprgo","vagas emrego","vagas empprego","vagas empprego","vagas emppregoo","vagas emppregu","vagas emppreguu","vagas emppregoo","vagas emppregoo","vagas emppregoo", "oportunidades trabalho","oportunidade trabalho","oportunidaes trabalho","oportunidaeds trabalho","oportunidaes trabalo","oportunidaes trablho","oportunidaes trbalho","oportunidaes trbalh","oportunidaes trbalhoo","oportunidaes trbalhoo", "oportunidade trabalho","oportunidaes trabalho","oportunidaeds trabalho","oportunidaes trabalo","oportunidaes trablho","oportunidaes trbalho","oportunidaes trbalh","oportunidaes trbalhoo","oportunidaes trbalhoo","oportunidaes trbalhoo" ],
         "text": f"""
 💼 **Trabalhe Conosco (Vagas Senac)**<br><br>
 
 🌐 **Acesse o site**<br>
-➡️ [Veja aqui](https://www.trabalhenosistema.com.br/)<br><br>
+➡️ [www.trabalhenosistema.com.br](www.trabalhenosistema.com.br)<br><br>
 
 👤 **Cadastro**<br>
 📝 Faça login e cadastre seus dados<br><br>
@@ -412,4 +409,3 @@ def ask():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
