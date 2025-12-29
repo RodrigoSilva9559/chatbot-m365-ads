@@ -350,7 +350,7 @@ FAQ_M365 = {
 💼 **Trabalhe Conosco (Vagas Senac)**<br><br>
 
 🌐 **Acesse o site**<br>
-➡️ [www.trabalhenosistema.com.br](www.trabalhenosistema.com.br)<br><br>
+➡️ [Acesse aqui](https://www.trabalhenosistema.com.br/)<br><br>
 
 👤 **Cadastro**<br>
 📝 Faça login e cadastre seus dados<br><br>
@@ -409,3 +409,4 @@ def ask():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
