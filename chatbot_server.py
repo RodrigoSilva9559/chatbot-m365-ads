@@ -2,18 +2,11 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 
-# ATENÇÃO: Se o nome do arquivo é chatbot_server.py, a variável Flask deve ser 'app'
-# e o Procfile deve ser: web: gunicorn chatbot_server:app
 app = Flask(__name__)
-# O CORS é essencial para permitir a comunicação entre seu HTML e o servidor Python
 CORS(app) 
 
-# URL base que será usada para as imagens. 
-# ATUALIZE ESTA URL quando você hospedar suas imagens no GitHub Pages!
-# BASE_IMAGE_URL = "https://via.placeholder.com/300x150?text="
 BASE_IMAGE_URL = "https://rodrigosilva9559.github.io/chatbot-m365-ads/imagens/"
 
-# --- Base de Conhecimento Expandida ---
 FAQ_M365 = {
     "login_computador": {
        "keywords": ["acesar","acesar computador","acesar compudador","acesso computador","acesso compudador", "login","loguin","logim","logn","loggin","loguin","loguin","loguin","loguin","loguin", "entrar","entar","entra","entrarr","entrarr","entrra","entarr","entar","entar","entar", "entrar no computador","entar no computador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador","entrar no compudador", "entrar no pc","entar no pc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc","entrar no pcc", "acessar computador","acesar computador","acessar compudador","acessar compudador","acessar compudador","acessar compudador","acessar compudador","acessar compudador","acessar compudador","acessar compudador", "acessar pc","acesar pc","acessar pcc","acessar pcc","acessar pcc","acessar pcc","acessar pcc","acessar pcc","acessar pcc","acessar pcc", "computador","compudador","computadorr","computado","computador","computador","computador","computador","computador","computador", "primeiro acesso","primeiro aceso","primeiro acsso","primeiro acseso","primeiro acsso","primeiro acsso","primeiro acsso","primeiro acsso","primeiro acsso","primeiro acsso", "iniciar","inicar","inicir","inicar","inicir","inicar","inicir","inicar","inicir","inicar", "começar","comecar","comessar","comecar","comessar","comecar","comessar","comecar","comessar","comecar", "abrir" ],
@@ -27,7 +20,6 @@ FAQ_M365 = {
 ⚠️ *Obs: A senha padrão só funciona se nunca foi alterada.*  
 ❓ Em caso de problemas ou esquecimento, procure o **Rodrigo na Secretaria**.
                     """,
-        # "image_url": f"{BASE_IMAGE_URL}Tela+de+Login"
         "image_url": f"{BASE_IMAGE_URL}login/tela_login.jpg"
     },
     "login_visitante": {
@@ -37,7 +29,6 @@ FAQ_M365 = {
 🔑 **Login:** camaqua01@senacrs.edu.br<br>
 🔐 **Senha:** Escola.Senac.01
                     """,
-        # "image_url": f"{BASE_IMAGE_URL}Tela+de+Login"
         "image_url": f"{BASE_IMAGE_URL}login/tela_login.jpg"
     },
         "login_wifi": {
@@ -368,19 +359,14 @@ FAQ_M365 = {
 def get_resposta(pergunta_usuario):
     pergunta_usuario = pergunta_usuario.lower()
     
-    # Itera sobre os tópicos na base de conhecimento
     for topico, data in FAQ_M365.items():
-        # Itera sobre as palavras-chave do tópico
         for keyword in data["keywords"]:
             if keyword in pergunta_usuario:
-                # Retorna a resposta se encontrar uma palavra-chave
                 return {
-                    # Tratamento extra para quebra de linha com HTML e negrito
                     "text": data["text"],
                     "image_url": data.get("image_url", "")
                 }
             
-    # Resposta Padrão/Fallback se nenhuma palavra-chave for encontrada
     return {
         "text": "Desculpe, não encontrei uma resposta para sua pergunta sobre o Senac Camaquã. Tente usar palavras-chave como 'login', 'senha', 'portal do aluno' ou 'cursos'.",
         "image_url": ""
@@ -395,10 +381,9 @@ def ask():
         if any(keyword in user_query for keyword in value["keywords"]):
             response = {"text": value["text"]}
 
-            # Se houver várias imagens
             if "image_urls" in value:
                 response["image_urls"] = value["image_urls"]
-            # Se houver só uma
+
             elif "image_url" in value:
                 response["image_url"] = value["image_url"]
 
@@ -409,4 +394,3 @@ def ask():
 
 if __name__ == '__main__':
     app.run(debug=True)
-

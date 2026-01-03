@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Variáveis do Chatbot
     const iconeChat = document.querySelector('.icone-assistente');
     const popupChat = document.querySelector('.popup-assistente');
     const botaoMinimizar = document.getElementById('minimizar-chat');
@@ -7,32 +6,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const botaoEnviar = document.getElementById('enviar-pergunta');
     const conversaContainer = document.getElementById('conversa-container');
 
-    // Variáveis do Pop-up de Feedback
     const popupFeedback = document.getElementById('feedback-popup');
     const fecharPopupFeedback = document.getElementById('fechar-popup-feedback');
     const feedbackLink = popupFeedback.querySelector('.botao-feedback');
 
-    // Substitua esta URL pela URL do seu servidor Render após a implantação
-    //const SERVER_URL = 'http://localhost:5000/ask'; // Para testar localmente
+    //const SERVER_URL = 'http://localhost:5000/ask'; // teste na minha maquina
     const SERVER_URL = 'https://chatbot-m365-ads.onrender.com/ask';
 
-    // Lógica do Chatbot
-    // Abrir chat ao clicar no ícone
     iconeChat.addEventListener('click', () => {
         popupChat.classList.add('aberto');
-        iconeChat.style.display = 'none'; // Esconde o ícone
+        iconeChat.style.display = 'none';
     });
 
-    // Minimizar chat 
     if (botaoMinimizar) { 
         botaoMinimizar.addEventListener('click', () => { 
             popupChat.classList.remove('aberto'); 
-            iconeChat.style.display = 'flex'; // Exibe o ícone novamente 
+            iconeChat.style.display = 'flex';
     });
 
 }
 
-    // Função para adicionar mensagens ao chat
     function adicionarMensagem(data, remetente) {
         const divMensagem = document.createElement('div');
         divMensagem.classList.add('mensagem');
@@ -42,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
             divMensagem.classList.add('bot-mensagem');
         }
 
-        // Renderiza Markdown como HTML
         if (typeof marked !== 'undefined') {
             divMensagem.innerHTML = marked.parse(data.text);
         } else {
@@ -51,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         conversaContainer.appendChild(divMensagem);
 
-        // Se houver várias imagens
         if (data.image_urls && Array.isArray(data.image_urls)) {
             data.image_urls.forEach(url => {
                 const imgElement = document.createElement('img');
@@ -60,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 conversaContainer.appendChild(imgElement);
             });
         } else if (data.image_url) {
-            // Suporte para uma única imagem
             const imgElement = document.createElement('img');
             imgElement.src = data.image_url;
             imgElement.classList.add('mensagem-imagem');
@@ -70,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
         conversaContainer.scrollTop = conversaContainer.scrollHeight;
     }
 
-    // Função para enviar pergunta ao backend
     async function enviarPergunta() {
         const pergunta = inputUsuario.value.trim();
         if (pergunta === '') {
@@ -112,17 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Lógica do Pop-up de Feedback
-    // Exibe após 30 segundos
+
     setTimeout(() => {
         popupFeedback.style.display = 'flex';
     }, 30000);
 
-    // Fechar pop-up de feedback
     fecharPopupFeedback.addEventListener('click', () => {
         popupFeedback.style.display = 'none';
     });
 
-    // Link do formulário de feedback
     feedbackLink.href = "https://forms.office.com/r/mpeD1i1LxM?origin=lprLink";
 });

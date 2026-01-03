@@ -1,4 +1,4 @@
-/* Estilos para o Chatbot - INÍCIO */
+
 .assistente-virtual {
     position: fixed;
     bottom: 20px;
@@ -26,7 +26,7 @@
 }
 
 .popup-assistente {
-    display: none; /* Começa escondido */
+    display: none; 
     position: absolute;
     bottom: 70px;
     right: 0;
@@ -41,7 +41,7 @@
 }
 
 .popup-assistente.aberto {
-    display: flex; /* Exibe quando a classe 'aberto' é adicionada */
+    display: flex; 
 }
 
 .header-chat {
@@ -133,11 +133,9 @@
 #enviar-pergunta:hover {
     background-color: #0056b3;
 }
-/* Estilos para o Chatbot - FIM */
 
-/* Estilos para o Pop-up de Feedback - INÍCIO */
 .feedback-popup-overlay {
-    display: none; /* Inicialmente escondido */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -196,4 +194,3 @@
     color: #aaa;
     cursor: pointer;
 }
-/* Estilos para o Pop-up de Feedback - FIM */

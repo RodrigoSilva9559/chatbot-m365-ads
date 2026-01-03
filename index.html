@@ -8,10 +8,8 @@
   <title>Como posso lhe ajudar hoje?</title>
   <meta name="description" content="Guia prático para alunos e professores utilizarem o Microsoft 365 com eficiência. Descubra dicas, truques e soluções rápidas para Word, Excel, PowerPoint e muito mais.">
 
-  <!-- Fonte moderna -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   
-  <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -44,7 +42,6 @@
     <p>&copy; 2025 Criado por Rodrigo Silva</p>
   </footer>
 
-  <!-- Assistente Virtual -->
   <div class="assistente-virtual" role="complementary" aria-label="Assistente Virtual">
     <div class="icone-assistente">
       <img src="imagens/Chatbot.png" alt="Ícone do Assistente Virtual">
@@ -52,14 +49,13 @@
     <div class="popup-assistente" aria-live="polite">
       <div class="header-chat">
         <span class="titulo-chat">Assistente Virtual</span>
-        <!--<button id="minimizar-chat" class="botao-minimizar" aria-label="Minimizar chat">-</button>-->
         <button id="minimizar-chat" class="botao-minimizar">×</button>
       </div>
       <div class="conversa-container" id="conversa-container">
         <div class="mensagem bot-mensagem">
           👋 Olá! Sou seu assistente virtual. Pergunte-me algo que queira saber?<br><br>
           ⚠️ Para o assistente ser mais acertivo, pergunte no miniimo com duas palavras.<br>
-          Ex.: entrar no pc, ou acesso visitantes.<br><br>
+          Ex.: entrar no pc, ou acesso visitantes.,br><br><br>
           <strong><em>Como se trata de um servidor gratuito, a primeira resposta do assistente demora um pouco mais.</em></strong>
         </div>
       </div>
@@ -71,7 +67,6 @@
     </div>
   </div>
 
-  <!-- Feedback Popup -->
   <div id="feedback-popup" class="feedback-popup-overlay" role="dialog" aria-labelledby="feedback-title" aria-modal="true">
     <div class="feedback-popup-content">
       <button class="fechar-popup" id="fechar-popup-feedback" aria-label="Fechar feedback">×</button>
@@ -82,11 +77,8 @@
     </div>
   </div>
 
-  <!-- Biblioteca para converter Markdown em HTML -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-  <!-- Seu script principal -->
   <script src="script.js"></script>
 </body>
 </html>
-
