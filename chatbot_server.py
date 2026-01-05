@@ -239,13 +239,13 @@ FAQ_M365 = {
 📞 **Contatos das Consultoras de Cursos**<br><br>
 
 👩‍💼 **Laurielle**<br>
-➡️ [Clique para falar](https://api.whatsapp.com/send/?phone=5551999160202&text&type=phone_number&app_absent=0)<br><br>
+➡️ [Clique para falar](https://api.whatsapp.com/send/?phone=5551999999999&text&type=phone_number&app_absent=0)<br><br>
 
 👩‍💼 **Thais**<br>
-➡️ [Clique para falar](https://api.whatsapp.com/send/?phone=5551985942119&text&type=phone_number&app_absent=0)<br><br>
+➡️ [Clique para falar](https://api.whatsapp.com/send/?phone=5551999999999&text&type=phone_number&app_absent=0)<br><br>
 
 👩‍💼 **Tailine**  <br>
-➡️ [Clique para falar](https://api.whatsapp.com/send/?phone=5551991246334&text&type=phone_number&app_absent=0)<br><br>
+➡️ [Clique para falar](https://api.whatsapp.com/send/?phone=5551999999999&text&type=phone_number&app_absent=0)<br><br>
 
                     """,
         "image_url": ""
@@ -255,7 +255,7 @@ FAQ_M365 = {
         "text": f"""
 💬 **Contato da Secretaria (WhatsApp)**<br>
 
-📲 [Clique para falar com a Secretaria](https://api.whatsapp.com/send/?phone=5551992680906&text&type=phone_number&app_absent=0)
+📲 [Clique para falar com a Secretaria](https://api.whatsapp.com/send/?phone=5551999999999&text&type=phone_number&app_absent=0)
 
                     """,
         "image_url": ""
@@ -293,7 +293,7 @@ FAQ_M365 = {
 👩‍💼 Procure pelo **Tainã** ou **Tatiane** no setor financeiro da escola<br><br>
 
 📲 **WhatsApp Financeiro**  
-➡️ [Clique aqui](https://api.whatsapp.com/send/?phone=5551991701052&text&type=phone_number&app_absent=0)
+➡️ [Clique aqui](https://api.whatsapp.com/send/?phone=5551999999999&text&type=phone_number&app_absent=0)
 
                     """,
         "image_url": ""
@@ -394,3 +394,4 @@ def ask():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
